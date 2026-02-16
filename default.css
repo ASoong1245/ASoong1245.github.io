@@ -26,3 +26,12 @@ a:hover {
     color:#EDE7B1;
     text-decoration: underline;
 }
+
+.navbar {
+    list-style: none; 
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 10px 0;
+}
