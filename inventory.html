@@ -1,27 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Survey</title>
-    <link rel="stylesheet" href="default.css">
+  <meta charset="utf-8">
+  <title>Annoyed Stoat Equipment Inventory</title>
+  <link rel="stylesheet" href="inventory.css">
 </head>
+
 <body>
 
-<div data-include="itis3135/components/header.html"></div>
-
+<header>
 <nav>
-    <ul>
-        <li><a href="survey.html">Survey</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="inventory.html">Inventory</a></li>
-        <li><a href="instructions.html">Instructions</a></li>
-        <li><a href="highlight.html">Highlight</a></li>
-    </ul>
+<a href="index.html">Home</a>
+<a href="itis3135/contract.html">Contract</a>
+<a href="survey.html">Survey</a>
+<a href="cards.html">Cards</a>
+<a href="inventory.html">Inventory</a>
+<a href="documentation.html">Documentation</a>
+<a href="product.html">Product</a>
 </nav>
+</header>
 
-<main>
-    <h2>Inventory page</h2>
-</main>
-<script src = "itis3135/scripts/HTMLinclude.min.js"></script>
+<h1>Annoyed Stoat Pest Control Inventory</h1>
+
+<table>
+
+  <thead>
+    <tr>
+      <th>Equipment</th>
+      <th>Manufacturer</th>
+      <th>Category</th>
+      <th>Status</th>
+      <th>Effectiveness</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr class="ready">
+      <td>Stoat-Approved Rat Trap</td>
+      <td>Stoat Industries</td>
+      <td>Trap</td>
+      <td><span class="status">Ready</span></td>
+      <td>
+        <span class="rate three">
+          <span></span><span></span><span></span>
+        </span>
+      </td>
+    </tr>
+
+    <tr class="ready">
+      <td>Snake Relocation Stick</td>
+      <td>Forest Tools Co.</td>
+      <td>Handling Tool</td>
+      <td><span class="status">Ready</span></td>
+      <td>
+        <span class="rate two">
+          <span></span><span></span><span></span>
+        </span>
+      </td>
+    </tr>
+
+    <tr class="maintenance">
+      <td>Raccoon-Proof Trash Lock</td>
+      <td>WildGuard</td>
+      <td>Prevention</td>
+      <td><span class="status">Maintenance</span></td>
+      <td>
+        <span class="rate three">
+          <span></span><span></span><span></span>
+        </span>
+      </td>
+    </tr>
+
+    <tr class="ready">
+      <td>Attic Squirrel Repellent</td>
+      <td>PestAway Labs</td>
+      <td>Repellent</td>
+      <td><span class="status">Ready</span></td>
+      <td>
+        <span class="rate two">
+          <span></span><span></span><span></span>
+        </span>
+      </td>
+    </tr>
+
+  </tbody>
+
+</table>
+
 </body>
+
 </html>

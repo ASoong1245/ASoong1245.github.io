@@ -1,26 +1,118 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Survey</title>
-    <link rel="stylesheet" href="default.css">
-</head>
-<body>
-<div data-include="itis3135/components/header.html"></div>
 
+<head>
+  <meta charset="UTF-8">
+  <title>Annoyed Stoat Pest Control Company Survey</title>
+</head>
+
+<body>
+
+<header>
 <nav>
-    <ul>
-        <li><a href="survey.html">Survey</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="inventory.html">Inventory</a></li>
-        <li><a href="instructions.html">Instructions</a></li>
-        <li><a href="highlight.html">Highlight</a></li>
-    </ul>
+<a href="index.html">Home</a>
+<a href="itis3135/contract.html">Contract</a>
+<a href="survey.html">Survey</a>
+<a href="cards.html">Cards</a>
+<a href="inventory.html">Inventory</a>
+<a href="documentation.html">Documentation</a>
+<a href="product.html">Product</a>
 </nav>
+</header>
 
 <main>
-    <h2>Survey page</h2>
+
+<h1 id="title">Annoyed Stoat Pest Control Company Report</h1>
+<p id="description">
+Tell the Annoyed Stoat Pest Control Company what creature has invaded your territory so we can deal with it immediately.
+</p>
+
+<form id="survey-form">
+
+<label id="name-label" for="name">Your Name</label>
+<input id="name" type="text" placeholder="Enter your name" required>
+
+<br><br>
+
+<label id="email-label" for="email">Your Email</label>
+<input id="email" type="email" placeholder="Enter your email" required>
+
+<br><br>
+
+<label id="number-label" for="number">How many pests did you see?</label>
+<input id="number" type="number" min="1" max="100" placeholder="Number of pests">
+
+<br><br>
+
+<label for="dropdown">Which pest is bothering you most?</label>
+<select id="dropdown">
+  <option value="">Select the pest</option>
+  <option value="rat">Rat</option>
+  <option value="raccoon">Raccoon</option>
+  <option value="snake">Snake</option>
+  <option value="squirrel">Squirrel</option>
+  <option value="possum">Possum</option>
+</select>
+
+<br><br>
+
+<p>How urgent is the situation?</p>
+
+<label>
+<input type="radio" name="urgency" value="low">
+Mildly annoying
+</label>
+
+<label>
+<input type="radio" name="urgency" value="medium">
+Very annoying
+</label>
+
+<label>
+<input type="radio" name="urgency" value="high">
+EXTREMELY annoying
+</label>
+
+<br><br>
+
+<p>Where are the pests located?</p>
+
+<label>
+<input type="checkbox" value="attic">
+Attic
+</label>
+
+<label>
+<input type="checkbox" value="basement">
+Basement
+</label>
+
+<label>
+<input type="checkbox" value="yard">
+Yard
+</label>
+
+<label>
+<input type="checkbox" value="walls">
+Inside the walls
+</label>
+
+<br><br>
+
+<label for="comments">Additional Details for the Stoat</label>
+<textarea id="comments" rows="4" cols="40" placeholder="Describe the pest problem..."></textarea>
+
+<br><br>
+
+<input id="submit" type="submit" value="Send Report to the Annoyed Stoat">
+
+</form>
+
 </main>
-    <script src = "itis3135/scripts/HTMLinclude.min.js"></script>
+
+<script src="itis3135/scripts/HTMLinclude.min.js"></script>
+
 </body>
 </html>
